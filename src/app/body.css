@@ -1,0 +1,53 @@
+/* styles.css */
+.home-container {
+    background-color: #f5f5f5;
+    padding: 50px;
+  }
+  
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .image-text-container {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .centered-image {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .text p {
+    flex: 1; /* Take up remaining space in text container */
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #333;
+  }
+  

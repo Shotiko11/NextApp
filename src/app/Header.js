@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import './header.css';
-import GeneralPage from './GeneralPage';
+import Body from './Body';
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -40,7 +40,7 @@ const Header = () => {
           </li>
         </ul>
       </header>
-      <GeneralPage />
+      <Body />
     </div>
   );
 };
