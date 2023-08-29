@@ -1,10 +1,12 @@
+import OnlyHeader from '@/app/OnlyHeader'
 import React from 'react'
 
 const about = () => {
   return (
-    <div>
+    <>
+      <OnlyHeader/>
       <h1>About</h1>
-    </div>
+    </>
   )
 }
 

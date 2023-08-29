@@ -13,7 +13,7 @@ const Body = () => {
       <div className="home-content">
         <div className="image-text-container">
           <div className="centered-image">
-            <Image src="/images/imageone.jpg" alt="Image One" width={300} height={200} />
+            <Image  src="/images/imageone.jpg" alt="Image One" width={300} height={200} />
           </div>
           <div className="text">
             <h2>Welcome to the Tech Industry</h2>

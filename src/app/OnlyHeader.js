@@ -1,18 +1,16 @@
 "use client"
 
-import React, { useState } from 'react';
-import Link from 'next/link';
-import './header.css';
-import Body from './Body';
-import Footer from './Footer';
-import SearchBar from './SearchBar';
+import React from 'react'
+import SearchBar from './SearchBar'
+import Link from 'next/link'
 
-const Header = () => {
-  const [menuActive, setMenuActive] = useState(false);
+const OnlyHeader = () => {
+    const [menuActive, setMenuActive] = useState(false);
 
   const toggleMenu = () => {
     setMenuActive(!menuActive);
   };
+
 
   return (
     <div>
@@ -43,10 +41,8 @@ const Header = () => {
           </li>
         </ul>
       </header>
-      <Body />
-      <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default OnlyHeader
