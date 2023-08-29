@@ -1,15 +1,14 @@
-"use client"
-
-import React from 'react'
-import SearchBar from './SearchBar'
 import Link from 'next/link'
+import React, { useState } from 'react'
+import SearchBar from './SearchBar'
+import './OnlyHeader.css'
 
 const OnlyHeader = () => {
     const [menuActive, setMenuActive] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuActive(!menuActive);
-  };
+    const toggleMenu = () => {
+        setMenuActive(!menuActive);e
+    };
 
 
   return (

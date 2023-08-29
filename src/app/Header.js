@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import './header.css';
+import './Header.css';
 import Body from './Body';
 import Footer from './Footer';
 import SearchBar from './SearchBar';
