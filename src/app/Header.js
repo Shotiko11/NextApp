@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import './header.css';
 import Body from './Body';
+import Footer from './Footer';
+import SearchBar from './SearchBar';
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -16,6 +18,7 @@ const Header = () => {
     <div>
       <header className="header">
         <div className="companyName">GlobalTech</div>
+        <SearchBar />
         <div className={`burgerIcon ${menuActive ? 'active' : ''}`} onClick={toggleMenu}>
           {menuActive ? '✕' : '☰'}
         </div>
@@ -41,6 +44,7 @@ const Header = () => {
         </ul>
       </header>
       <Body />
+      <Footer />
     </div>
   );
 };
