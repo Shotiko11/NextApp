@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import './body.css'; // Import your CSS file
+import '../cssfiles/body.css'; 
 
 const Body = () => {
   const word = "world's";

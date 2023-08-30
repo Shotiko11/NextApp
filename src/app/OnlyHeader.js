@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import SearchBar from './SearchBar'
-import './OnlyHeader.css'
+import '../cssfiles/OnlyHeader.css'
 
 const OnlyHeader = () => {
     const [menuActive, setMenuActive] = useState(false);
