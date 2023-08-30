@@ -1,0 +1,17 @@
+/* Contact.css */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .contact-details {
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
