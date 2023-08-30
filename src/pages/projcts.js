@@ -1,10 +1,10 @@
 import OnlyHeader from '@/app/OnlyHeader'
 import React from 'react'
 
-const projcts = () => {
+const Projcts = () => {
   return (
     <OnlyHeader />
   )
 }
 
-export default projcts
+export default Projcts

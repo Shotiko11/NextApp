@@ -1,10 +1,10 @@
 import OnlyHeader from '@/app/OnlyHeader'
 import React from 'react'
 
-const contact = () => {
+const Contact = () => {
   return (
     <OnlyHeader />
   )
 }
 
-export default contact
+export default Contact

@@ -1,10 +1,10 @@
 import OnlyHeader from '@/app/OnlyHeader'
 import React from 'react'
 
-const products = () => {
+const Products = () => {
   return (
     <OnlyHeader />
   )
 }
 
-export default products
+export default Products
