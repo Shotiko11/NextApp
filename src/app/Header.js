@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <div>
       <header className="header">
-        <div className="companyName">GlobalTech</div>
+        <Link className="companyName" href="/" >GlobalTech</Link>
         <SearchBar />
         <div className={`burgerIcon ${menuActive ? 'active' : ''}`} onClick={toggleMenu}>
           {menuActive ? '✕' : '☰'}

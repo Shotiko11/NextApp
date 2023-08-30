@@ -10,11 +10,16 @@ const OnlyHeader = () => {
         setMenuActive(!menuActive);e
     };
 
+    const stil = {
+      color:"white",
+      textDecoration:"none"
+    }
+
 
   return (
     <div>
       <header className="header">
-        <div className="companyName">GlobalTech</div>
+        <Link style={stil} className="companyName" href="/">GlobalTech</Link>
         <SearchBar />
         <div className={`burgerIcon ${menuActive ? 'active' : ''}`} onClick={toggleMenu}>
           {menuActive ? '✕' : '☰'}
