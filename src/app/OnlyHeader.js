@@ -41,7 +41,7 @@ const OnlyHeader = () => {
             <Link href="/products">Products</Link>
           </li>
           <li className="navItem">
-            <Link href="/projects">Projects</Link>
+            <Link href="/">Projects</Link>
           </li>
         </ul>
       </header>
