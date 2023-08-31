@@ -1,4 +1,4 @@
-/* styles.css */
+/* body.css */
 .home-container {
   background-color: #f5f5f5;
   padding: 50px;
@@ -29,10 +29,14 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 3px solid #333;
   margin-bottom: 10px;
+  transition: border-color 0.3s ease; 
+}
+
+.centered-image:hover {
+  border-color: #666; 
 }
 
 .text {
-  display: none;
   flex: 1;
   align-items: center;
   text-align: center;
@@ -43,19 +47,20 @@
   border: 3px solid #333;
   margin-top: 10px;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  height: 0; 
+  overflow: hidden; 
+  transition: opacity 0.8s ease, height 0.5s ease; 
 }
 
 .selected .text {
-  display: flex;
-  flex-direction: column; 
   opacity: 1;
+  height: auto;
 }
 
 .text p {
   color: black;
   font-size: 17px;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 h2 {
@@ -67,8 +72,4 @@ h2 {
 p {
   font-size: 16px;
   color: #333;
-}
-
-.fade-in {
-  opacity: 1;
 }

@@ -14,9 +14,12 @@ const Body = () => {
 
   const imageClickHandler = (index) => {
     if (selectedImage === index) {
-      setSelectedImage(null); // Hide text when clicking the same image
+      setSelectedImage(null); 
     } else {
-      setSelectedImage(index); // Display text of the clicked image
+      setSelectedImage(index); 
+      setTimeout(() => {
+        setSelectedImage(index); 
+      }, 500); 
     }
   };
 
