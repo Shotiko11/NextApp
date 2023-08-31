@@ -19,7 +19,7 @@ const OnlyHeader = () => {
   return (
     <div>
       <header className="header">
-        <Link style={stil} className="companyName" href="/">GlobalTech</Link>
+        <Link style={stil} className="companyName" href="/">SLTeach</Link>
         <SearchBar />
         <div className={`burgerIcon ${menuActive ? 'active' : ''}`} onClick={toggleMenu}>
           {menuActive ? '✕' : '☰'}

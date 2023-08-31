@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <div>
       <header className="header">
-        <Link className="companyName" href="/" >GlobalTech</Link>
+        <Link className="companyName" href="/" >SLTeach</Link>
         <SearchBar />
         <div className={`burgerIcon ${menuActive ? 'active' : ''}`} onClick={toggleMenu}>
           {menuActive ? '✕' : '☰'}
