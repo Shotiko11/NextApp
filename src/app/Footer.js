@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section">
           <h2>About Us</h2>
-          <p>We are a leading software company...</p>
+          <p>We are a leader of Software Industry</p>
         </div>
         <div className="footer-section">
           <h2>Contact</h2>
@@ -16,9 +16,9 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h2>Connect With Us</h2>
-          <a href="#">LinkedIn</a>
-          <a href="#">Twitter</a>
-          <a href="#">GitHub</a>
+          <a href="https://www.linkedin.com/">LinkedIn</a>
+          <a href="https://twitter.com/?lang=en">Twitter</a>
+          <a href="https://github.com/">GitHub</a>
         </div>
       </div>
       <div className="footer-bottom">
