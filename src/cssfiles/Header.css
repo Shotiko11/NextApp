@@ -1,5 +1,3 @@
-
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -8,7 +6,7 @@
   background-color: #333;
   color: #fff;
 }
-  
+
 .companyName {
   font-size: 28px;
   font-weight: bold;
@@ -20,51 +18,60 @@
   display: flex;
   align-items: center;
 }
-  
+
 .navList {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
-  
+
 .navItem {
   margin-right: 40px;
 }
-  
+
 .navItem a {
   text-decoration: none;
   color: #fff;
 }
-  
+
 .navItem a:hover {
   color: #ffa500;
 }
 
 .burgerIcon {
-  display: none; 
+  display: none;
   cursor: pointer;
   font-size: 24px;
   transition: color 0.3s;
 }
-  
 
 @media (max-width: 800px) {
-  .navList.active {
-    display: flex;
-    opacity: 1;
-    pointer-events: auto;
-    flex-direction: column; /* Stack items vertically in the menu */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .navbar {
+    margin-top: 20px;
   }
 
   .burgerIcon {
     display: block;
-    margin-right: 20px;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 
-  /* Hide the list items by default */
+  .navList.active {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .navList {
     display: none;
     flex-direction: column;

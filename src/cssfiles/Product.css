@@ -1,0 +1,58 @@
+/* Page-level styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Product containers */
+.container {
+  background-color: #333;
+  color: white;
+  padding: 15px; /* Reduced padding for a smaller container */
+  margin: 10px auto; /* Centering the containers and adjusting margin */
+  width: 650px; /* Adjusted width for a more compact look */
+  border-radius: 10px; /* Increased border radius for a softer look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow for depth */
+  transition: transform 0.2s; /* Adding a smooth hover effect */
+}
+
+/* Product image */
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Product name */
+.name {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Product price */
+.price {
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+/* Product seller */
+.seller {
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+/* Product description */
+.description {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    margin: 5px auto; /* Adjusted margin for smaller screens */
+    padding: 10px; /* Reduced padding for smaller screens */
+    width: 90%; /* Making the containers wider for smaller screens */
+  }
+}
