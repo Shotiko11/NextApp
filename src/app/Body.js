@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import '../cssfiles/body.css';
 import { texts } from './LongTexts';
@@ -14,7 +14,7 @@ const Body = () => {
 
   const imageClickHandler = (index) => {
     if (selectedImage === index) {
-      setSelectedImage(null); // Toggle off if clicking the same image
+      setSelectedImage(null); // Hide text when clicking the same image
     } else {
       setSelectedImage(index); // Display text of the clicked image
     }
@@ -32,12 +32,10 @@ const Body = () => {
             <div className="centered-image">
               <Image src={image} alt={`Image ${index}`} width={300} height={200} />
             </div>
-            {selectedImage === index && (
-              <div className="text">
-                <h2>{index === 0 ? 'Welcome to the best tech company Website' : index === 1 ? 'Why you have to choose us?' : 'Shaping the Future with Innovation'}</h2>
-                <p>{index === 0 ? texts.welcome : index === 1 ? texts.whyUs : texts.WaitFromUs}</p>
-              </div>
-            )}
+            <div className={`text ${selectedImage === index ? 'fade-in' : ''}`}>
+              <h2>{index === 0 ? 'Welcome to the best tech company Website' : index === 1 ? 'Why you have to choose us?' : 'Shaping the Future with Innovation'}</h2>
+              <p>{index === 0 ? texts.welcome : index === 1 ? texts.whyUs : texts.WaitFromUs}</p>
+            </div>
           </div>
         ))}
       </div>

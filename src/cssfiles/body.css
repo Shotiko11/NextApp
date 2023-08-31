@@ -42,17 +42,20 @@
   padding: 20px;
   border: 3px solid #333;
   margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .selected .text {
   display: flex;
-  flex-direction: column; /* Change to column layout */
+  flex-direction: column; 
+  opacity: 1;
 }
 
 .text p {
   color: black;
   font-size: 17px;
-  margin-top: 10px; /* Add space between h2 and p */
+  margin-top: 10px; 
 }
 
 h2 {
@@ -64,4 +67,8 @@ h2 {
 p {
   font-size: 16px;
   color: #333;
+}
+
+.fade-in {
+  opacity: 1;
 }
