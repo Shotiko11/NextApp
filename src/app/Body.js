@@ -13,7 +13,11 @@ const Body = () => {
   ];
 
   const imageClickHandler = (index) => {
-    setSelectedImage(index);
+    if (selectedImage === index) {
+      setSelectedImage(null); // Toggle off if clicking the same image
+    } else {
+      setSelectedImage(index); // Display text of the clicked image
+    }
   };
 
   return (
